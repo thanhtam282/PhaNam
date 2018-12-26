@@ -1,13 +1,13 @@
 main
 	+media-breakpoint-down(md)
 		padding-top: r(47px)
-.canhcam-header-1
+.phanam-header-1
 	position: fixed
 	// position: sticky
 	top: 0
 	width: 100%
 	background: white
-	border-top: 2px solid color-get($mau,dark)
+	// border-top: 2px solid color-get($mau,dark)
 	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1)
 	z-index: 9998
 	+media-breakpoint-down(md)
@@ -15,7 +15,7 @@ main
 		// position: fixed
 		width: 100%
 	.menu-bar
-		margin-top: -2px
+		// margin-top: -2px
 		display: flex
 		.logo
 			+pad(.5rem null)
@@ -23,6 +23,8 @@ main
 			position: absolute
 			background: color-get($mau, trang)
 			top: r(10px)
+			+media-breakpoint-down(lg)
+				top: r(40px)
 			+media-breakpoint-down(md)
 				top: 0
 			&:after
@@ -34,12 +36,17 @@ main
 				background: color-get($mau, trang)
 				display: block
 				position: absolute
-				width: 200%
+				width: 300%
 				height: 100%
+				box-shadow: -6px 5px 5px 0px rgba(0, 0, 0, 0.1)
+
 				+media-breakpoint-down(xl)
 					bottom: r(-23px)
 					right: 9px
+				@media (min-width: 1500px)
+					right: -10px
 			&:before
+				// box-shadow: -6px 5px 5px 0px rgba(0, 0, 0, 0.1)
 				z-index: -1
 				background: color-get($mau,trang)
 				position: absolute
@@ -50,12 +57,18 @@ main
 				bottom: -1rem
 				right: -4rem
 				@media (min-width: 1500px)
-					-webkit-clip-path: circle(33% at 76% 16.5%)
-					clip-path: circle(33% at 76% 16.5%)
+					-webkit-clip-path: circle(33% at 76% 17.5%)
+					clip-path: circle(33% at 76% 17.5%)
 				+media-breakpoint-down(xl)
 					-webkit-clip-path: circle(27% at 69% 32.5%)
 					clip-path: circle(27% at 69% 32.5%)
 					bottom: -1.5rem
+				+media-breakpoint-down(lg)
+					-webkit-clip-path: circle(45% at 44% 22.5%)
+					clip-path: circle(45% at 44% 22.5%)
+					right: -3rem
+					bottom: r(-23px)
+
 				+media-breakpoint-down(md)
 					+wh(0)
 			img
@@ -63,8 +76,10 @@ main
 					max-width: 15rem
 
 				+media-breakpoint-down(lg)
-					max-width: 4rem
+					max-width: 6rem
 					transform: scale(1.2)
+				+media-breakpoint-down(md)
+					max-width: 4rem
 		.mainnav
 
 			width: 100%
@@ -266,11 +281,15 @@ main
 					height: 100%
 					left: -11rem
 					@media (min-width: 1500px)
-						-webkit-clip-path: circle(10% at 19.4% 162.6%)
-						clip-path: circle(10% at 19.4% 162.6%)
+						-webkit-clip-path: circle(10% at 19.4% 165.6%)
+						clip-path: circle(10% at 19.6% 165.6%)
+						left: -13rem
 					+media-breakpoint-down(xl)
-						-webkit-clip-path: circle(10% at 22.4% 132.6%)
-						clip-path: circle(10% at 22.4% 132.6%)
+						-webkit-clip-path: circle(10% at 22.7% 132.6%)
+						clip-path: circle(10% at 22.7% 132.6%)
+					+media-breakpoint-down(lg)
+						-webkit-clip-path: circle(10% at 22.7% 128.6%)
+						clip-path: circle(10% at 22.7% 128.6%)
 
 					+media-breakpoint-down(md)
 						+wh(0)

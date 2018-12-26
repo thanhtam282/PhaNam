@@ -1,0 +1,41 @@
+.phanam-intro-about-us-2
+	background-position: center center
+	background-size: cover
+	background-image: url('../img/02_intro/intro_bg_1.png')
+
+	+pad(r(94px) null)
+	+media-breakpoint-down(md)
+		+pad(r(50px) null)
+	+media-breakpoint-down(sm)
+		+pad(r(20px) null)
+	position: relative
+	&:after
+		position: absolute
+		top: 0
+		display:block
+		width: 100%
+		height: 100%
+		content: ''
+		background: color-rgba(color-get($mau,main),.5)
+	figure
+		position: relative
+		z-index: 1000
+		display: flex
+		justify-content: space-between
+		flex-direction: column
+		text-align: center
+		align-items: center
+		height: 100%
+		+media-breakpoint-down(lg)
+			margin-top: 2.5rem
+			display: block
+		img
+			// max-width: 100%
+			filter: brightness(0) invert(1)
+		figcaption
+			h3
+				margin-top: 1rem
+				color: color-get($mau,trang)
+				+fz(r(18px))
+
+aff

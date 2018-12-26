@@ -1,0 +1,122 @@
+.phanam-intro-about-us-3
+	overflow: hidden
+	position: relative
+	.block-wrapper
+		position: relative
+		display: flex
+		+media-breakpoint-down(sm)
+			flex-direction: column
+		&:nth-child(odd)
+			+media-breakpoint-up(md)
+				flex-direction: row-reverse
+			.info-wrapper
+				padding: r(130px)
+				padding-right: 0
+				+media-breakpoint-down(lg)
+					+pad(r(60px) 0 r(60px) r(60px))
+				+media-breakpoint-down(md)
+					flex: 0 0 50%
+					+pad(2rem 0 2rem 2rem)
+				+media-breakpoint-down(sm)
+					flex: 0 0 100%
+					padding-left: 0
+				+media-breakpoint-down(xs)
+					+pad(2rem 1rem)
+				&:after
+					left: 0
+					right: auto
+			.banner-info-wrapper
+				+media-breakpoint-down(sm)
+					min-height: r(200px)
+				.banner
+					// left: -6rem
+					right: 35%
+					+media-breakpoint-down(lg)
+						// left: -9rem
+					+media-breakpoint-down(md)
+						right: 50%
+						left: auto
+					+media-breakpoint-down(sm)
+						right: 0
+						left: 0
+					
+
+		.info-wrapper
+			position: relative
+			flex: 0 0 35%
+			color: color-get($mau,trang)
+
+			display: flex
+			justify-content: center
+			flex-direction: column
+			text-align: left
+			+media-breakpoint-up(xl)
+				// align-items: center
+				height: r(450px)
+				+pad(r(130px))
+				padding-left: 0
+			+media-breakpoint-down(lg)
+				+pad(r(60px))
+				padding-left: 0
+			+media-breakpoint-down(md)
+				height: r(250px)
+				flex: 0 0 50%
+				+pad(2rem)
+				padding-left: 0
+			+media-breakpoint-down(sm)
+				height: auto
+				flex: 0 0 100%
+				+pad(2rem)
+			+media-breakpoint-down(xs)
+				+pad(2rem 1rem)
+			&:after
+				background-image: url('../img/02_intro/intro_bg_2.png')
+				height: 100%
+				display: block
+				position: absolute
+				content: ""
+				z-index: -1
+				top: 0
+				right: 0
+				width: 500%
+				+media-breakpoint-down(sm)
+					right: -50%
+			h2
+				+head-title(dark)
+				margin-bottom: 1rem
+				text-align: left
+
+			p
+				color: color-get($mau,text-3)
+
+
+
+		.banner-info-wrapper
+			// margin-left: 10px
+			flex: 0 0 65%
+			display: flex
+			+media-breakpoint-down(md)
+				flex: 0 0 50%
+			+media-breakpoint-down(sm)
+				flex: 0 0 100%
+				position: relative
+				margin: 0
+				min-height: r(200px)
+			.banner
+				position: absolute
+				top: 0
+				width: 100%
+				height: 100%
+				z-index: -2
+				+media-breakpoint-down(sm)
+					width: 100vw
+					margin-left: calc(-50vw + 50%)
+				+media-breakpoint-up(md)
+					width: calc((100vw - 720px)/2 + 360px)
+				+media-breakpoint-up(lg)
+					display: block
+					width: calc((100vw - 960px)/2 + 620px)
+				+media-breakpoint-up(xl)
+					width: calc((100vw - 1140px)/2 + 736px)
+				@media (min-width: 1500px)
+					width: calc((100vw - 1400px)/ 2 + 910px)
