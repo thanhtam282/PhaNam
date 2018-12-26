@@ -1,0 +1,16 @@
+extends _layout/_layout.pug
+
+block var
+	- title = 'intro'
+	- bodyClass = 'intro-system'
+
+block header
+	include ../lib/header/h-1/index.pug
+block main
+	include ../lib/banner/b-1/index.pug
+	include ../lib/breadcrumb/b-1/index.pug
+	include ../lib/intro-system/i-1/index.pug
+	include ../lib/intro-system/i-2/index.pug
+
+block footer
+	include ../lib/footer/f-1/index.pug

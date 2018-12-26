@@ -1,2 +1,26 @@
+.phanam-intro-about-us-4
+	background: color-get($mau, bg)
+	+pad(r(90px) null)
+	+media-breakpoint-down(md)
+		+pad(r(45px) null)
+	// +media-breakpoint-down(sm)
+	// 	+pad(r(20px) null)
 
-.phanam-
+	h2
+		+head-title(dark)
+		margin-bottom: r(110px)
+		+media-breakpoint-down(md)
+			margin-bottom: r(50px)
+		+media-breakpoint-down(sm)
+			margin-bottom: r(20px)
+	.wrapper
+		+flex-center()
+		img
+			max-width: 100%
+			+media-breakpoint-up(lg)
+				&:last-child()
+					display: none
+
+			+media-breakpoint-down(md)
+				&:first-child()
+					display: none

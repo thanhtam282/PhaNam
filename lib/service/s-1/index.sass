@@ -1,0 +1,20 @@
+.phanam-service-1
+	+pad(r(89px) null)
+	+media-breakpoint-down(md)
+		+pad(r(49px) null)
+	+media-breakpoint-down(md)
+		+pad(r(25px) null)
+	.wrapper
+		+flex-center()
+		flex-direction: column
+		h2
+			+head-title(main)
+			margin-bottom: .5rem
+		img
+			margin-bottom: r(40px)
+		p
+			color: color-get($mau,text-3)
+			max-width: r(730px)
+			font-size: r(18px)
+			+media-breakpoint-down(sm)
+				font-size: 1rem
