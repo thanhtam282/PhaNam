@@ -1,0 +1,38 @@
+section.gioithieu2-1
+	.container
+		.row
+			.col-lg-5
+				.img-1
+					img#map-image(src="./img/introduce/1.png", alt="" usemap="#map")
+					map(name='map')
+						area(shape='circle', coords='175, 734, 13' data-popup='map-1')
+						area(shape='circle', coords='180, 703, 11')
+						area(shape='circle', coords='209, 687, 13')
+						area(shape='circle', coords='361, 556, 11')
+						area(shape='circle', coords='323, 442, 12')
+						area(shape='circle', coords='148, 225, 13')
+						area(shape='circle', coords='201, 126, 12')
+						area(shape='circle', coords='176, 102, 10')
+				.popup-wrapper
+					.popup-container
+						.popup-content(data-map='map-1')
+							.logo
+								img(src="./img/global/logo.png", alt="")
+							.name
+								h3 Pha Nam Hồ Chí Minh - CÔNG TY CỔ PHẦN DƯỢC PHA NAM
+							.info
+								.item
+									em.material-icons place
+									p
+										b Địa chỉ: 
+										| 436 Cao Thắng, Phường 12, Quận 10, Tp. Hồ Chí Minh
+								.item
+									em.material-icons call
+									p
+										b Điện thoại: 
+										| 028 6265 1638
+						.popup-close
+							img(src="./img/introduce/close.png", alt="")
+			.col-lg-7
+				.img-2
+					img(src="./img/introduce/2.png", alt="")

@@ -1,0 +1,25 @@
+.phanam-intro-about-us-nav
+	padding-top: r(75px)
+	.nav
+		align-items: center
+		justify-content: center
+		.nav-item
+			+pad(0 r(8px) r(8px))
+			
+			+media-breakpoint-down(sm)
+				padding-left: 0
+			.nav-link
+				+pad(.65rem 1.5rem)
+				+bor-rad(100px)
+				+fw(500)
+				text-transform: uppercase
+				position: relative
+				color: #a4a4a4
+				transition: .4s all ease-in-out
+				font-size: r(15px)
+				box-shadow: 0 0 0 1px inset #a4a4a4
+				&.active, &:hover
+					background: #1173b8
+					color: #fff
+					box-shadow: none
+					+fw(600)

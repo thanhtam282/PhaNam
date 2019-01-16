@@ -1,0 +1,18 @@
+extends _layout/_layout.pug
+
+block var
+	- title = 'Home'
+	- bodyClass = ''
+
+block header
+	include ../lib/header/h-1/index.pug
+block main
+	include ../lib/banner/b-1/index.pug
+	include ../lib/breadcrumb/b-1/index.pug
+	include ../lib/nav/n-1/index.pug
+	include ../lib/gioithieu-1/i-1/index.pug
+	//- include ../lib/gioithieu-1/i-2/index.pug
+	include ../lib/gioithieu-1/i-3/index.pug
+	include ../lib/gioithieu-1/i-4/index.pug
+block footer
+	include ../lib/footer/f-1/index.pug
